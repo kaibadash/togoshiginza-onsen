@@ -136,7 +136,13 @@ h1 {
 }
 
 .bath-calendar {
+  margin: 0 0 0.75rem;
+}
+
+.calendar-note {
   margin: 0 0 2.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .cal-nav {
