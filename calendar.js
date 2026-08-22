@@ -177,8 +177,8 @@
           btn.appendChild(el("span", "cal-mark", cell.menShort));
         } else {
           var marks = el("span", "cal-marks");
-          marks.appendChild(labeledBath("cal-mark is-men", cell.menShort));
-          marks.appendChild(labeledBath("cal-mark is-women", cell.womenShort));
+          marks.appendChild(el("span", "cal-mark is-men", cell.menShort));
+          marks.appendChild(el("span", "cal-mark is-women", cell.womenShort));
           btn.appendChild(marks);
         }
         if (cell.ymd === today) btn.className += " is-today";
