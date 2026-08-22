@@ -168,8 +168,9 @@ h1 {
 
 .cal-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 0.25rem;
+  width: 100%;
 }
 
 .cal-dow,
@@ -190,6 +191,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 0;
+  width: 100%;
   background: var(--paper);
   border: 1px solid transparent;
   color: var(--ink);
@@ -206,19 +209,13 @@ h1 {
 
 .cal-marks {
   display: flex;
-  gap: 0.2rem;
+  gap: 0.15rem;
   justify-content: center;
   line-height: 1.2;
 }
 
 .cal-mark {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.12rem;
-}
-
-.cal-mark .bath-icon {
-  font-size: 0.7em;
+  min-width: 0;
 }
 
 .cal-mark.is-men {
@@ -406,6 +403,22 @@ a {
   .bath-name,
   .bath-closed {
     font-size: 1.5rem;
+  }
+
+  .cal-nav {
+    gap: 0.35rem;
+  }
+
+  .cal-nav-btn {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .cal-dow,
+  .cal-cell {
+    min-height: 2.8rem;
+    padding: 0.15rem 0.05rem;
+    font-size: 0.7rem;
   }
 }
 
