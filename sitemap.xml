@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- changefreq と priority は Google が無視するため入れていない -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kaibadash.github.io/togoshiginza-onsen/</loc>
