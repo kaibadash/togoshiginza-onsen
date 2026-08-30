@@ -21,6 +21,136 @@
   <meta name="twitter:title" content="戸越銀座温泉 本日の日替わり湯">
   <meta name="twitter:description" content="戸越銀座温泉の本日の日替わり湯（非公式）。今日の湯・営業時間・料金・定休日・アクセス。最新情報は店舗へご確認ください。">
   <meta name="twitter:image" content="https://kaibadash.github.io/togoshiginza-onsen/images/hero.jpg">
+  <!-- 非公式サイトのため施設そのものを名乗らず、WebPage の about で施設を参照する形にしている -->
+  <!-- 25:00 は翌 01:00 として closes に書く（schema.org は closes < opens を翌日と解釈する） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kaibadash.github.io/togoshiginza-onsen/#website",
+        "url": "https://kaibadash.github.io/togoshiginza-onsen/",
+        "name": "戸越銀座温泉 本日の日替わり湯",
+        "inLanguage": "ja"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://kaibadash.github.io/togoshiginza-onsen/#webpage",
+        "url": "https://kaibadash.github.io/togoshiginza-onsen/",
+        "name": "戸越銀座温泉 本日の日替わり湯",
+        "description": "戸越銀座温泉の本日の日替わり湯（非公式）。今日の湯・営業時間・料金・定休日・アクセス。最新情報は店舗へご確認ください。",
+        "inLanguage": "ja",
+        "isPartOf": { "@id": "https://kaibadash.github.io/togoshiginza-onsen/#website" },
+        "about": { "@id": "https://kaibadash.github.io/togoshiginza-onsen/#place" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://kaibadash.github.io/togoshiginza-onsen/images/hero.jpg",
+          "width": 1000,
+          "height": 710
+        },
+        "author": { "@id": "https://github.com/kaibadash#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://github.com/kaibadash#person",
+        "name": "kaiba",
+        "url": "https://github.com/kaibadash"
+      },
+      {
+        "@type": "DaySpa",
+        "@id": "https://kaibadash.github.io/togoshiginza-onsen/#place",
+        "name": "戸越銀座温泉",
+        "image": "https://kaibadash.github.io/togoshiginza-onsen/images/zenkei.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "JP",
+          "addressRegion": "東京都",
+          "addressLocality": "品川区",
+          "streetAddress": "戸越2-1-6"
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=戸越銀座温泉+東京都品川区戸越2-1-6",
+        "publicAccess": true,
+        "priceRange": "¥100〜¥750",
+        "currenciesAccepted": "JPY",
+        "sameAs": [
+          "https://togoshiginzaonsen.com/",
+          "https://shinagawa1010.jp/list/togoshiginza/",
+          "https://shinagawa-kanko.or.jp/spot/togoshiginzaonsen/"
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+            "opens": "15:00",
+            "closes": "01:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday", "PublicHolidays"],
+            "opens": "08:00",
+            "closes": "12:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday", "PublicHolidays"],
+            "opens": "15:00",
+            "closes": "01:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "00:00",
+            "closes": "00:00"
+          }
+        ],
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "黒湯（天然温泉）", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "軟水", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "コンフォートサウナ（別料金）", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "ガス遠赤外線サウナ（別料金）", "value": true }
+        ],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "name": "大人",
+            "price": "600",
+            "priceCurrency": "JPY",
+            "itemOffered": { "@type": "Service", "name": "入浴" }
+          },
+          {
+            "@type": "Offer",
+            "name": "中学生",
+            "price": "500",
+            "priceCurrency": "JPY",
+            "itemOffered": { "@type": "Service", "name": "入浴" }
+          },
+          {
+            "@type": "Offer",
+            "name": "中人（小学生）",
+            "price": "200",
+            "priceCurrency": "JPY",
+            "itemOffered": { "@type": "Service", "name": "入浴" }
+          },
+          {
+            "@type": "Offer",
+            "name": "小人（未就学児）",
+            "price": "100",
+            "priceCurrency": "JPY",
+            "itemOffered": { "@type": "Service", "name": "入浴" }
+          },
+          {
+            "@type": "Offer",
+            "name": "サウナ（入浴料込み）",
+            "price": "750",
+            "priceCurrency": "JPY",
+            "itemOffered": { "@type": "Service", "name": "サウナ" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
